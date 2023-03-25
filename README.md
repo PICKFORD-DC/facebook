@@ -18,7 +18,7 @@ $ git clone https://github.com/PICKFORD-DC/facebook
 
 $ cd facebook
 
-$ python run.py
+$ python on
 
 ```
 ### Tampilan Menu Utama ###
