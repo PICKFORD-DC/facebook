@@ -1,4 +1,4 @@
-# Cara Install White Termux
+# Cara Install Whith Termux
 ```bash
 $ pkg update && pkg upgrade
 
@@ -21,8 +21,3 @@ $ cd facebook
 $ python on
 
 ```
-### Tampilan Menu Utama ###
-<img src="https://b.top4top.io/p_2578evx7m0.jpg">
-
-### Hasil Cp Dan Ijo ###
-<img src="https://c.top4top.io/p_25788k0dp1.jpg">
