@@ -1,0 +1,46 @@
+if __name__=="__main__":
+    try:
+        import os, sys, shutil, subprocess 
+    except requests.exceptions.ConnectionError:
+           exit ('\n\t\x1b[0m koneksi bermasalah ...\n')
+    try:
+         import requests 
+    except (ImportError,ModuleNotFoundError):
+        os.system("bash ./data/cekmodule.sh")
+        os.system("pip install requests")
+    try:
+        import tqdm
+    except (ImportError,ModuleNotFoundError):
+        os.system("bash ./data/cekmodule.sh")
+        os.system('pip install tqdm')
+    try:
+        import colorama
+    except (ImportError,ModuleNotFoundError):
+         os.system("bash ./data/cekmodule.sh")
+         os.system('pip install colorama')
+    try:
+        import mechanize 
+    except (ImportError,ModuleNotFoundError):
+        os.system("bash ./data/cekmodule.sh")
+        os.system("pip install mechanize")
+    try:
+        import rich 
+    except (ImportError,ModuleNotFoundError):
+        os.system("bash ./data/cekmodule.sh")
+        os.system("pip install rich")
+    try:
+        import fake_useragent
+    except (ImportError,ModuleNotFoundError):
+        os.system("bash ./data/cekmodule.sh")
+        os.system('pip install fake_useragent')
+    try:
+        bff_2 = open(os.devnull, "w")
+        my_music = subprocess.call(["dpkg","-s","play-audio"],stdout=bff_2,stderr=subprocess.STDOUT)
+        bff_2.close() 
+        if my_music !=0:
+            os.system("./data/cekmodule.sh")
+            os.system('pkg install play-audio' )
+    except FileNotFoundError:
+        os.system("./data/cekmodule.sh")
+        os.system('pkg install play-audio' )
+os.system('python ./data/on.py')
