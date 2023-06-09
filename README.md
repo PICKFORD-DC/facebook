@@ -18,3 +18,4 @@ $ python run
 
 ```
 ### [ NOTE ] SETELAH 1 BULAN SAYA UP SC INI BAKAL SAYA TUTUP NIH SC ###
+### Thanks For brutalGH ###
